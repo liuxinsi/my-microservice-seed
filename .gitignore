@@ -1,0 +1,6 @@
+# Created by .ignore support plugin (hsz.mobi)
+.idea/
+common/common.iml
+mms-parent.iml
+my-microservice-seed.iml
+rest-service/rest-service.iml
