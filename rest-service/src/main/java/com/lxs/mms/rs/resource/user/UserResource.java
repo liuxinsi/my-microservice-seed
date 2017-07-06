@@ -2,6 +2,8 @@ package com.lxs.mms.rs.resource.user;
 
 import com.lxs.mms.rs.resource.ResourceSupport;
 import com.lxs.mms.rs.resource.bean.user.UserInfo;
+import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiOperation;
 import org.springframework.stereotype.Component;
 
 import javax.ws.rs.GET;
@@ -16,15 +18,17 @@ import java.util.List;
  */
 @Component
 @Path("/user/v1")
-public class UserResource extends ResourceSupport{
+@Api(value = "用户相关服务", produces = "application/json")
+public class UserResource extends ResourceSupport {
+    @ApiOperation(value = "加载所有用户", notes = "要分页")
     @GET
     @Path("/loadUsers")
-    public List<UserInfo> loadUsers(){
-        List<UserInfo> userInfos=new ArrayList<>(10);
-        for (int i = 0; i <100; i++) {
-            UserInfo u=new UserInfo();
-            u.setId(i+"");
-            u.setName("u"+i);
+    public List<UserInfo> loadUsers() {
+        List<UserInfo> userInfos = new ArrayList<>(10);
+        for (int i = 0; i < 100; i++) {
+            UserInfo u = new UserInfo();
+            u.setId(i + "");
+            u.setName("u" + i);
             u.setPwd("");
             u.setRegisteDate(new Date());
             userInfos.add(u);

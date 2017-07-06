@@ -11,7 +11,7 @@ my microservice seed 工作用到一些微服务技术栈，提干，优化，�
 - [x] gzip(外部容器依赖)
 - [ ] gzip(jersey依赖)
 - [ ] https
-- [ ] swagger
+- [x] swagger
 - [x] 开发时代码热更新
 - [ ] cros(jersey依赖)
 - [ ] 秘钥管理
@@ -24,6 +24,7 @@ my microservice seed 工作用到一些微服务技术栈，提干，优化，�
 - [ ] 服务间通信
 - [ ] docker化
 - [ ] sql/nosql支持
+- [ ] sql database auto initialization
 - [ ] cache contorl
 - [ ] production ready
 - [ ] maven profile
