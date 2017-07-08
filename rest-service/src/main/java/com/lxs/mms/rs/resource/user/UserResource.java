@@ -20,9 +20,19 @@ import java.util.List;
 @Path("/user/v1")
 @Api(value = "用户相关服务", produces = "application/json")
 public class UserResource extends ResourceSupport {
-    @ApiOperation(value = "加载所有用户", notes = "要分页")
+    /**
+     * 获取所有用户。
+     *
+     * @return 用户信息列表
+     */
     @GET
     @Path("/loadUsers")
+    @ApiOperation(
+            value = "加载所有用户",
+            notes = "数据了大要分页",
+            response = UserInfo.class,
+            responseContainer = "List"
+    )
     public List<UserInfo> loadUsers() {
         List<UserInfo> userInfos = new ArrayList<>(10);
         for (int i = 0; i < 100; i++) {
