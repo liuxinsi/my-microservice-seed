@@ -15,6 +15,7 @@ my microservice seed 工作用到一些微服务技术栈，提干，优化，�
 - [x] 开发时代码热更新
 - [ ] cros(jersey依赖)
 - [ ] 秘钥管理
+- [x] 全局ID
 - [ ] 校验
 - [ ] 请求响应加解密
 - [ ] jwt
@@ -25,7 +26,7 @@ my microservice seed 工作用到一些微服务技术栈，提干，优化，�
 - [ ] 服务间通信
 - [ ] docker化
 - [ ] sql/nosql支持
-- [ ] sql database auto initialization
+- [x] sql database auto initialization
 - [ ] cache contorl
 - [ ] production ready
 - [ ] maven profile

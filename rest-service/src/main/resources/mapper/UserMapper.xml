@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.lxs.mms.db.mapper.UserMapper">
+    <resultMap id="resultMap" type="com.lxs.mms.db.bean.User">
+        <id column="USER_ID" property="userId"/>
+        <result column="NAME" property="name"/>
+        <result column="PASSWORD" property="password"/>
+        <result column="BIRTHDAY" property="birthday"/>
+        <result column="MAIL" property="mail"/>
+        <result column="STATUS" property="status"/>
+    </resultMap>
+
+    <insert id="saveUser" parameterType="com.lxs.mms.db.bean.User">
+        INSERT INTO TB_USER
+        ("USER_ID", "NAME","PASSWORD", "BIRTHDAY", "MAIL","STATUS")
+        VALUES(#{userId},#{name},#{password},#{birthday},#{mail},#{status})
+    </insert>
+</mapper>
