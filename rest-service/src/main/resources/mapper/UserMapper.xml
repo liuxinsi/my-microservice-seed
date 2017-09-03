@@ -13,7 +13,8 @@
 
     <insert id="saveUser" parameterType="com.lxs.mms.db.bean.User">
         INSERT INTO TB_USER
-        ("USER_ID", "NAME","PASSWORD", "BIRTHDAY", "MAIL","STATUS")
-        VALUES(#{userId},#{name},#{password},#{birthday},#{mail},#{status})
+        (USER_ID,NAME,PASSWORD,BIRTHDAY,MAIL,STATUS)
+        VALUES
+        (#{userId},#{name},#{password},#{birthday},#{mail},#{status})
     </insert>
 </mapper>

@@ -30,6 +30,8 @@
     </Appenders>
 
     <Loggers>
+        <logger name="org.springframework" level="info"/>
+        <logger name="org.hibernate" level="info"/>
         <root level="debug">
             <appender-ref ref="Async"/>
         </root>
