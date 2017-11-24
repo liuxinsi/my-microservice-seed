@@ -13,6 +13,7 @@
         <module>common</module>
         <module>rest-service-core</module>
         <module>auth-service</module>
+        <module>user-service</module>
     </modules>
     <name>mms-parent</name>
 
