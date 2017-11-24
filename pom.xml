@@ -2,14 +2,17 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
+    <description>父模块，提供公共依赖的管理。</description>
 
     <groupId>com.lxs.mms</groupId>
     <artifactId>mms-parent</artifactId>
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
+
     <modules>
         <module>common</module>
-        <module>rest-service</module>
+        <module>rest-service-core</module>
+        <module>auth-service</module>
     </modules>
     <name>mms-parent</name>
 
@@ -33,6 +36,11 @@
                 <groupId>com.lxs.mms</groupId>
                 <artifactId>common</artifactId>
                 <version>1.0-SNAPSHOT</version>
+            </dependency>
+            <dependency>
+                <groupId>com.lxs.mms</groupId>
+                <artifactId>rest-service-core</artifactId>
+                <version>1.0.0</version>
             </dependency>
 
             <!--utils-->
@@ -67,6 +75,12 @@
                 <groupId>io.swagger</groupId>
                 <artifactId>swagger-jersey2-jaxrs</artifactId>
                 <version>1.5.0</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-configuration-processor</artifactId>
+                <version>1.5.4.RELEASE</version>
             </dependency>
 
             <!--test-->

@@ -3,4 +3,12 @@
 common/common.iml
 mms-parent.iml
 my-microservice-seed.iml
-rest-service/rest-service.iml
+auth-service/auth-service.iml
+.DS_Store
+common/src/main/resources/
+logs/
+rest-service-core/rest-service-core.iml
+rest-service-core/src/main/resources/static/swagger/swagger-ui-bundle.js.map
+rest-service-core/src/main/resources/static/swagger/swagger-ui-standalone-preset.js.map
+rest-service-core/src/main/resources/static/swagger/swagger-ui.css.map
+rest-service-core/src/main/resources/static/swagger/swagger-ui.js.map
