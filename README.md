@@ -19,13 +19,13 @@ my microservice seed 工作用到一些微服务技术栈，提干，优化，�
 - [ ] 校验
 - [ ] 请求响应加解密
 - [ ] jwt
-- [ ] 服务发现
+- [x] 服务发现
 - [ ] 依赖隔离
 - [ ] 异步响应
 - [ ] websocket
 - [ ] 服务间通信
 - [ ] docker化
-- [ ] sql/nosql支持
+- [x] sql/nosql支持
 - [x] sql database auto initialization
 - [ ] cache contorl
 - [ ] production ready

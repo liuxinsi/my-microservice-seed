@@ -14,6 +14,7 @@
         <module>rest-service-core</module>
         <module>auth-service</module>
         <module>user-service</module>
+        <module>eureka-server</module>
     </modules>
     <name>mms-parent</name>
 
@@ -90,6 +91,15 @@
                 <artifactId>junit</artifactId>
                 <version>4.12</version>
                 <scope>test</scope>
+            </dependency>
+
+            <!--cloud-->
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-dependencies</artifactId>
+                <version>Dalston.SR1</version>
+                <type>pom</type>
+                <scope>import</scope>
             </dependency>
         </dependencies>
     </dependencyManagement>

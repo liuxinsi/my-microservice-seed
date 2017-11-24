@@ -4,6 +4,7 @@ import com.lxs.mms.rest.service.core.jersey.JerseyCoreConfig;
 import com.lxs.mms.rest.service.core.swagger.Swagger;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 
@@ -11,6 +12,7 @@ import org.springframework.context.annotation.ComponentScan;
  * @author liuxinsi
  * @mail akalxs@gmail.com
  */
+@EnableDiscoveryClient
 @SpringBootApplication
 @ComponentScan(value = "com.lxs.mms")
 public class AuthServiceApplication {
